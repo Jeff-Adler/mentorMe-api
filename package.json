@@ -34,24 +34,10 @@
     "express": "^4.17.1",
     "helmet": "^4.6.0",
     "hpp": "^0.2.3",
-    "module-alias": "^2.2.2",
     "morgan": "^1.10.0",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.37",
     "winston": "^3.3.3"
-  },
-  "_moduleAliases": {
-    "@/*": "build/*",
-    "@controllers/*": "build/controllers/*",
-    "@databases": "build/databases",
-    "@dtos/*": "build/dtos/*",
-    "@entity/*": "build/entity/*",
-    "@exceptions/*": "build/exceptions/*",
-    "@interfaces/*": "build/interfaces/*",
-    "@middlewares/*": "build/middlewares/*",
-    "@routes/*": "build/routes/*",
-    "@services/*": "build/services/*",
-    "@utils/*": "build/utils/*"
   }
 }
