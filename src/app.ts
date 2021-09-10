@@ -31,14 +31,14 @@ class App {
     this.app.listen(this.port, () => {
       Logger.info(`=================================`);
       Logger.info(`======= ENV: ${this.env} =======`);
-      Logger.info(`======= DB: ${this.dbConnectionType} =======`);
+      Logger.info(`======= DbType: ${this.dbConnectionType} =======`);
       Logger.info(`🚀 App listening on port ${this.port}`);
       Logger.info(`=================================`);
     });
   }
 
-  private connectToDatabase() {
-    createConnection(`${this.dbConnectionType}`);
+  private async connectToDatabase() {
+    await createConnection(`${this.dbConnectionType}`);
   }
 
   private initializeMiddlewares() {

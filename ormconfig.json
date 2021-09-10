@@ -4,9 +4,9 @@
     "type": "postgres",
     "host": "127.0.0.1",
     "port": 5432,
-    "username": "jeff",
+    "username": "jeffadler",
     "password": "",
-    "database": "test_db",
+    "database": "mentorme_v2_dev",
     "synchronize": true,
     "logging": false,
     "entities": [
