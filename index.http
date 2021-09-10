@@ -9,3 +9,7 @@ GET http://localhost:3000/cats/
 ### Logger
 
 GET http://localhost:3000/logger
+
+### Bad request
+
+GET http://localhost:3000/loggeraerger

@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import hpp from 'hpp';
@@ -6,6 +6,7 @@ import { morganMiddleware } from './middlewares/morganMiddleware';
 import errorMiddleware from './middlewares/errorMiddleware';
 import { IndexRoutes } from './routes/index.route';
 import { Logger } from './utils/logger';
+import { HttpException } from './exceptions/HttpException';
 
 class App {
   public app: express.Application;
@@ -21,6 +22,10 @@ class App {
     this.initializeMiddlewares();
     this.initializeRoutes();
     this.initializeErrorHandling();
+    this.app.use(function (req: Request, res: Response, next: NextFunction) {
+      console.log('test');
+      res.status(404).send('custom not found handler called');
+    });
   }
 
   public listen() {
