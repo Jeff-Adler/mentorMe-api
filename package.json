@@ -33,18 +33,7 @@
     "express": "^4.17.1",
     "helmet": "^4.6.0",
     "hpp": "^0.2.3",
-    "module-alias": "^2.2.2",
     "morgan": "^1.10.0",
     "winston": "^3.3.3"
-  },
-  "_moduleAliases": {
-    "@root": ".",
-    "@app": "src/app.ts",
-    "@controllers": "src/controllers",
-    "@exceptions": "src/exceptions",
-    "@interfaces": "src/interfaces",
-    "@middlewares": "src/middlewares",
-    "@routes": "src/routes",
-    "@utils": "src/utils"
   }
 }
