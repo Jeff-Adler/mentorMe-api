@@ -26,6 +26,6 @@ export class IndexRoutes implements Routes {
       res.send('Hello world');
     });
 
-    this.router.use(`${this.path}/cats`, new CatsRouter().router);
+    this.router.use(`${this.path}cats`, new CatsRouter().router);
   }
 }
