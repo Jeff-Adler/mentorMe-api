@@ -38,7 +38,7 @@
       "@controllers/*": ["controllers/*"],
       // "@databases": ["databases"],
       // "@dtos/*": ["dtos/*"],
-      // "@entity/*": ["entity/*"],
+      "@entity/*": ["entity/*"],
       "@exceptions/*": ["exceptions/*"],
       "@interfaces/*": ["interfaces/*"],
       "@middlewares/*": ["middlewares/*"],

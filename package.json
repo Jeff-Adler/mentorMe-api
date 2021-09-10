@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/server.ts",
+    "start": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register -r dotenv/config src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -36,6 +36,9 @@
     "hpp": "^0.2.3",
     "module-alias": "^2.2.2",
     "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.37",
     "winston": "^3.3.3"
   },
   "_moduleAliases": {
