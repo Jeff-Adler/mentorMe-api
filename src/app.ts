@@ -31,7 +31,7 @@ class App {
     this.app.listen(this.port, () => {
       Logger.info(`=================================`);
       Logger.info(`======= ENV: ${this.env} =======`);
-      Logger.info(`======= DbType: ${this.dbConnectionType} =======`);
+      Logger.info(`======= DB: ${this.dbConnectionType} =======`);
       Logger.info(`🚀 App listening on port ${this.port}`);
       Logger.info(`=================================`);
     });
