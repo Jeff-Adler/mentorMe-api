@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { Logger } from '../utils/logger';
+import { Logger } from '@utils/logger';
 
 export const catchAllMiddleware = (req: Request, res: Response, next: NextFunction) => {
   const status: number = 404;

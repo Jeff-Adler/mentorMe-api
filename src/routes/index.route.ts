@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
-import IndexController from '../controllers/index.controller';
-import { Routes } from '../interfaces/routes.interface';
-import { Logger } from '../utils/logger';
-import { CatsRouter } from './cats.route';
+import IndexController from '@controllers/index.controller';
+import { Routes } from '@interfaces/routes.interface';
+import { Logger } from '@utils/logger';
+import { CatsRouter } from '@routes/cats.route';
 
 export class IndexRoutes implements Routes {
   public path = '/';

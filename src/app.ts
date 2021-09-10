@@ -2,11 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import hpp from 'hpp';
-import { morganMiddleware } from './middlewares/morganMiddleware';
-import errorMiddleware from './middlewares/errorMiddleware';
-import { IndexRoutes } from './routes/index.route';
-import { Logger } from './utils/logger';
-import { catchAllMiddleware } from './middlewares/catchAllMiddleware';
+import { morganMiddleware } from '@middlewares/morganMiddleware';
+import errorMiddleware from '@middlewares/errorMiddleware';
+import { IndexRoutes } from '@routes/index.route';
+import { Logger } from '@utils/logger';
+import { catchAllMiddleware } from '@middlewares/catchAllMiddleware';
 class App {
   public app: express.Application;
   public port: string | number = 3000;
