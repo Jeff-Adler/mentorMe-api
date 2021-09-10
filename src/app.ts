@@ -6,8 +6,7 @@ import { morganMiddleware } from './middlewares/morganMiddleware';
 import errorMiddleware from './middlewares/errorMiddleware';
 import { IndexRoutes } from './routes/index.route';
 import { Logger } from './utils/logger';
-import { HttpException } from './exceptions/HttpException';
-
+import { catchAllMiddleware } from './middlewares/catchAllMiddleware';
 class App {
   public app: express.Application;
   public port: string | number = 3000;
@@ -22,10 +21,6 @@ class App {
     this.initializeMiddlewares();
     this.initializeRoutes();
     this.initializeErrorHandling();
-    this.app.use(function (req: Request, res: Response, next: NextFunction) {
-      console.log('test');
-      res.status(404).send('custom not found handler called');
-    });
   }
 
   public listen() {
@@ -56,6 +51,7 @@ class App {
 
   private initializeErrorHandling() {
     this.app.use(errorMiddleware);
+    this.app.use(catchAllMiddleware);
   }
 }
 
