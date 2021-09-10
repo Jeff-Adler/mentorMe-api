@@ -1,0 +1,11 @@
+### Hello World
+
+GET http://localhost:3000/
+
+### Cats
+
+GET http://localhost:3000/cats/
+
+### Logger
+
+GET http://localhost:3000/logger
